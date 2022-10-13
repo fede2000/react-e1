@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+.contenedorPrincipal{
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  background-color: rgb(23, 22, 22);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  font-size: 3rem;
+  font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contenedorForm{
+  width: 50%;
+  background-color: #4079c9;
+  display: flex;
+  justify-content: center;
+  margin: 5px auto;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contenedorTareas{
+  width: 50%;
+  background-color: #1d3557;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+input{
+  line-height: 30px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn{
+  background-color: rgb(14, 160, 41);
+  color: #fff;
+  cursor: pointer;
+  padding: 0 20px;
+  /* border: 1px solid #fff; */
+  border-radius: 10px;
+  transition: all .3s;
+  margin-right: 10px;
+}
+
+.btn:hover{
+  background-color: #008118;
+  transform: scale(1.1);
+}
+
+.btnEditar{
+  background-color: white;
+  color: #4079c9;
+  padding: 7px;
+  border: 1px solid #4079c9;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: all .5s;
+}
+
+
+.btnEditar:hover{
+  background-color: #cbd8ea;
+  transform: scale(1.1);
+}
+
+.btnBorrar{
+  background-color: white;
+  color: #bc0909;
+  padding: 7px;
+  border: 1px solid #bc0909;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: all .1s;
+}
+
+.btnBorrar:hover{
+  background-color: #bc0909;
+  transform: scale(1.1);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btnModificar{
+  background-color: white;
+  color: #008118;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 50%;
+  border: 1px solid #008118;
+  transition: all .3s;
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btnModificar:hover{
+  background-color: #008118;
+  color: white;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 50%;
+  border: 1px solid white;
+  transition: all .3s;
+  margin-right: 10px;
+}
+
+.contenedorInfoTareas{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contenedorTarea{
+  width: 80%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 2px hsla(0, 0%, 0%, 0.244);
+
+}
+
+.todoTarea{
+  margin-right: 50px;
+  color: #000;
+}
+
+.spanSubrayada{
+  text-decoration: line-through;
 }
